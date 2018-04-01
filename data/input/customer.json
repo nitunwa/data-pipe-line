@@ -1,0 +1,32 @@
+[  
+   {  
+      "id":"100",
+      "name":"Nitun",
+      "shopList":[  
+         {  
+            "shoppingdate":"06/03/2018",
+            "transitId":"001",
+            "itemList":[  
+               {  
+                  "id":"101",
+                  "name":"oil",
+                  "price":"12.00",
+                  "catergory":"item"
+               }
+            ]
+         },
+		 {  
+            "shoppingdate":"06/02/2018",
+            "transitId":"002",
+            "itemList":[  
+               {  
+                  "id":"102",
+                  "name":"oil",
+                  "price":"12.00",
+                  "catergory":"item"
+               }
+            ]
+         }
+      ]
+   }
+]

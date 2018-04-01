@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main>
+	<customer>
+		<id>100</id>
+		<name>Nitun</name>
+		<shopList>
+			<shoppingdate>06/03/2018</shoppingdate>
+			<transitId>001</transitId>
+			<itemList>
+				<id>101</id>
+				<name>oil</name>
+				<price>12.00</price>
+				<catergory>item</catergory>
+			</itemList>
+		</shopList>
+	</customer>
+	<customer>
+		<id>100</id>
+		<name>Nitun</name>
+		<shopList>
+			<shoppingdate>06/03/2018</shoppingdate>
+			<transitId>001</transitId>
+			<itemList>
+				<id>101</id>
+				<name>oil</name>
+				<price>12.00</price>
+				<catergory>item</catergory>
+			</itemList>
+		</shopList>
+	</customer>
+</main>
