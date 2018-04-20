@@ -15,5 +15,16 @@ git merge master
 
 git push origin
 
+ git remote -v  --> git location
 
 
+ 
+ ## Create new branch
+ 
+ Step1: Update master branch with github
+ git checkout master
+ git pull origin --> master has now latest code 
+ git checkout -b add_db_writer
+ 
+ 
+ 
