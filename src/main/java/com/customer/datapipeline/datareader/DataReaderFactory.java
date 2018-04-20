@@ -1,7 +1,7 @@
-package com.coustomer.datapipeline.datareader;
+package com.customer.datapipeline.datareader;
 
 
-import com.coustomer.datapipeline.model.DatapipeLineConfig;
+import com.customer.datapipeline.model.DatapipeLineConfig;
 
 public class DataReaderFactory<T> {
 

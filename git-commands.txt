@@ -1,0 +1,19 @@
+git status
+git add *
+git commit -m 'comments'
+git push origin
+
+
+git branch
+git checkout master -> switch to existing branch
+
+git pull origin -> fetch latest code from github and merge to master
+
+git checkout -b new_branch -> create new branch
+git checkout  quick-test -> switch to existing  quick-test
+git merge master
+
+git push origin
+
+
+

@@ -1,4 +1,4 @@
-package com.coustomer.datapipeline.model;
+package com.customer.datapipeline.model;
 
 public class Item {
 	private int id;

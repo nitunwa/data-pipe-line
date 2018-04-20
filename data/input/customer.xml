@@ -4,28 +4,36 @@
 		<id>100</id>
 		<name>Nitun</name>
 		<shopList>
-			<shoppingdate>06/03/2018</shoppingdate>
-			<transitId>001</transitId>
-			<itemList>
-				<id>101</id>
-				<name>oil</name>
-				<price>12.00</price>
-				<catergory>item</catergory>
-			</itemList>
+			<shopping>
+				<shoppingdate>2018-04-05</shoppingdate>
+				<transitId>001</transitId>
+				<itemList>
+					<item>
+						<id>101</id>
+						<name>oil</name>
+						<price>12.00</price>
+						<catergory>item</catergory>
+					</item>
+				</itemList>
+			</shopping>
 		</shopList>
 	</customer>
 	<customer>
 		<id>100</id>
-		<name>Nitun</name>
+		<name>Suajn</name>
 		<shopList>
-			<shoppingdate>06/03/2018</shoppingdate>
-			<transitId>001</transitId>
-			<itemList>
-				<id>101</id>
-				<name>oil</name>
-				<price>12.00</price>
-				<catergory>item</catergory>
-			</itemList>
+			<shopping>
+				<shoppingdate>2018-04-05</shoppingdate>
+				<transitId>001</transitId>
+				<itemList>
+					<item>
+						<id>101</id>
+						<name>oil</name>
+						<price>12.00</price>
+						<catergory>item</catergory>
+					</item>
+				</itemList>
+			</shopping>
 		</shopList>
 	</customer>
 </main>

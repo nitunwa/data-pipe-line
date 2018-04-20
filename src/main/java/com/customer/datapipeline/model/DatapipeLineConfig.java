@@ -1,8 +1,10 @@
-package com.coustomer.datapipeline.model;
+package com.customer.datapipeline.model;
 
 public class DatapipeLineConfig {
 	private String inputDataPath;
 	private String dataType;
+	private String outputDataPath;
+	private String outputDataType;
 
 	public String getInputDataPath() {
 		return inputDataPath;
@@ -18,6 +20,24 @@ public class DatapipeLineConfig {
 
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
+	}
+	
+	
+
+	public String getOutputDataPath() {
+		return outputDataPath;
+	}
+
+	public void setOutputDataPath(String outputDataPath) {
+		this.outputDataPath = outputDataPath;
+	}
+
+	public String getOutputDataType() {
+		return outputDataType;
+	}
+
+	public void setOutputDataType(String outputDataType) {
+		this.outputDataType = outputDataType;
 	}
 
 	@Override
