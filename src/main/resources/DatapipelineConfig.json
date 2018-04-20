@@ -1,4 +1,6 @@
 { 
-  "inputDataPath":"F:\\nitun-dev\\sts-workspace\\coustomer.data.pipeline\\data\\input\\customer.xml",
-  "dataType": "xml"
+  "inputDataPath":"F:\\nitun-dev\\sts-workspace\\coustomer-data-pipeline\\data\\input\\customer.json",
+  "dataType": "json",
+  "outputDataPath":"F:\\nitun-dev\\sts-workspace\\coustomer-data-pipeline\\data\\out\\customeroutput.json",
+   "outputDataType": "json"
 }

@@ -1,4 +1,4 @@
-package com.coustomer.datapipeline.datareader;
+package com.customer.datapipeline.datareader;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,11 +11,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JsonReader<T> implements DataReader<T> {
 
-	public List<T> readData(String filePath) {
+	public T readData(String filePath, Class<T> valueType) {
 		ObjectMapper objectMapper = new ObjectMapper();
-		List<T> dataList = null;
+		T dataList = null;
 		try {
-			dataList = objectMapper.readValue(new File(filePath), new TypeReference<List<T>>(){});
+			//dataList = objectMapper.readValue(new File(filePath), new TypeReference<List<T>>(){});
+			dataList  = objectMapper.readValue(new File(filePath),valueType);
+		
 		} catch (JsonParseException e) {
 				e.printStackTrace();
 		} catch (JsonMappingException e) {

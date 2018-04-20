@@ -1,4 +1,4 @@
-package com.coustomer.datapipeline.model;
+package com.customer.datapipeline.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +30,11 @@ public class Customer {
 
 	public void setShopList(List<Shopping> shopList) {
 		this.shopList = shopList;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", shopList=" + shopList + "]";
 	}
 
 }

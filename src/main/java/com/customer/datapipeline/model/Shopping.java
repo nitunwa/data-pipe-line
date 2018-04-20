@@ -1,4 +1,4 @@
-package com.coustomer.datapipeline.model;
+package com.customer.datapipeline.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -23,6 +23,19 @@ public class Shopping {
 
 	public void setTransitId(String transitId) {
 		this.transitId = transitId;
+	}
+
+	@Override
+	public String toString() {
+		return "Shopping [shoppingdate=" + shoppingdate + ", transitId=" + transitId + ", itemList=" + itemList + "]";
+	}
+
+	public List<Item> getItemList() {
+		return itemList;
+	}
+
+	public void setItemList(List<Item> itemList) {
+		this.itemList = itemList;
 	}
 
 }
