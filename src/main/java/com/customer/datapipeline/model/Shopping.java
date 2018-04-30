@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Shopping {
+public class Shopping implements DataModel {
 	private Date shoppingdate;
 	private String transitId;
 	List<Item> itemList = new ArrayList<Item>();
+	private int id;
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public Date getShoppingdate() {
 		return shoppingdate;
@@ -36,6 +41,12 @@ public class Shopping {
 
 	public void setItemList(List<Item> itemList) {
 		this.itemList = itemList;
+	}
+
+	@Override
+	public int getId() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

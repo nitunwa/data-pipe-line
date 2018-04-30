@@ -3,7 +3,7 @@ package com.customer.datapipeline.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Customer {
+public class Customer implements DataModel{
 	private int id;
 	private String name;
 	List<Shopping> shopList = new ArrayList<Shopping>();

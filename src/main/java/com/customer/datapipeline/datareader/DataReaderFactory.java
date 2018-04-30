@@ -17,7 +17,13 @@ public class DataReaderFactory<T> {
 		} else if (readerType.equals("xml")) {
 			reader = new XmlReader<T>();
 
-		} else {
+			
+		}else if (readerType.equals("s3")) {
+			reader = new S3Reader<T>();
+
+			
+		}
+		else {
 			reader = null;
 		}
 		return reader;
