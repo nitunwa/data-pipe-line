@@ -2,7 +2,7 @@ package com.customer.datapipeline.model;
 
 public class DatapipeLineConfig {
 	private String inputDataPath;
-	private String dataType;
+	private String inputDataType;
 	private String outputDataPath;
 	private String outputDataType;
 
@@ -14,12 +14,12 @@ public class DatapipeLineConfig {
 		this.inputDataPath = inputDataPath;
 	}
 
-	public String getDataType() {
-		return dataType;
+	public String getInputDataType() {
+		return inputDataType;
 	}
 
-	public void setDataType(String dataType) {
-		this.dataType = dataType;
+	public void setInputDataType(String dataType) {
+		this.inputDataType = dataType;
 	}
 	
 	
@@ -42,7 +42,7 @@ public class DatapipeLineConfig {
 
 	@Override
 	public String toString() {
-		return "DatapipeLineConfig [inputDataPath=" + inputDataPath + ", dataType=" + dataType + "]";
+		return "DatapipeLineConfig [inputDataPath=" + inputDataPath + ", dataType=" + inputDataType + "]";
 	}
 
 }

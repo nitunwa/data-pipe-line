@@ -1,8 +1,9 @@
 package com.customer.datapipeline.dataWriter;
 
+import com.customer.datapipeline.model.DataModel;
 import com.customer.datapipeline.model.DatapipeLineConfig;
 
-public class DataWriterFactory<T> {
+public class DataWriterFactory<T extends DataModel> {
 
 	DatapipeLineConfig datapipeLineConfig;
 
@@ -12,6 +13,12 @@ public class DataWriterFactory<T> {
 			dataWriter = new JsonWriter<T>();
 		} else if (outputdataType.equals("xml")) {
 			dataWriter = new XmlWriter<T>();
+
+		} else if (outputdataType.equals("mysql")) {
+			dataWriter = new DbWriter<T>();
+
+		} else if (outputdataType.equals("s3")) {
+			dataWriter = new S3DataWrite<T>();
 
 		} else {
 			dataWriter = null;

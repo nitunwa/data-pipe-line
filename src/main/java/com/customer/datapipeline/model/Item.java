@@ -1,6 +1,6 @@
 package com.customer.datapipeline.model;
 
-public class Item {
+public class Item implements DataModel{
 	private int id;
 	private String name;
 	private double price;
