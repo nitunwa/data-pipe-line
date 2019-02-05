@@ -10,7 +10,7 @@ public class DbReader {
 	DataSource dataSource;
 
 	public void readDataFmDb() throws ClassNotFoundException, SQLException {
-		Connection connection = dataSource.getConnection();
+		Connection connection = dataSource.getConnection("mysql");
 		Statement satement = connection.createStatement();
 		ResultSet resultSet = satement.executeQuery("select * from `data-line-pipe`.`customer`;");
 		while (resultSet.next()) {

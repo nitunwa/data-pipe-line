@@ -22,9 +22,9 @@ public class S3Reader<T> implements DataReader<T> {
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
 			S3Object object = awsS3Client.getObject(new GetObjectRequest(bucketName, S3_KEY_NAME));
-			InputStream objectData = object.getObjectContent();
+			InputStream bucket = object.getObjectContent();
 
-			dataList = objectMapper.readValue(objectData, valueType);
+			dataList = objectMapper.readValue(bucket, valueType);
 		} catch (Exception e) {
 
 			e.printStackTrace();

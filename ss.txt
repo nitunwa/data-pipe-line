@@ -1,0 +1,13 @@
+
+/*Map print */
+Set<String> keySet = countMap.keySet();
+		for (String category : keySet) {
+			int count = countMap.get(category);
+			System.out.println(category + ":" + count);
+		}
+		
+		Set<Entry<String,Integer>> entrySet = countMap.entrySet();
+		for (Entry<String,Integer> entry : entrySet) {
+			int count = entry.getValue();
+			System.out.println(entry.getKey() + ":" + count);
+		}
