@@ -13,14 +13,14 @@ public class CustomerDataWriteHandler implements DataHandler {
 
 
 	
-	public void writeData(Object obj) throws Exception {
+	public void writeData(Object obj,String dbType) throws Exception {
 		DataSource dataSource = new DataSource();
 
 		Statement statement = null;
 		Connection connection = null;
 
 		try {
-			connection = dataSource.getConnection();
+			connection = dataSource.getConnection(dbType);
 			statement = connection.createStatement();
 			Customer[] coustomerList = (Customer[]) obj;
 

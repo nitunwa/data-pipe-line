@@ -3,9 +3,9 @@
   "inputDataType": "json",
   
    "inputDataPath":"input-shopping-data",
-  "inputDataType": "s3",
+  "inputDataType": "xml",
 
    "outputDataPath":"input-shopping-data",
-   "outputDataType": "s3"
+   "outputDataType": "xml"
    
 }

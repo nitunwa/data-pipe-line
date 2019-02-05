@@ -1,8 +1,8 @@
 { 
-  "inputDataPath":"input-shopping-data",
-  "inputDataType": "s3",
- 
-   "outputDataPath":"output-shopping-data",
-   "outputDataType": "s3"
+  "inputDataPath":"data\\input\\customer.xml",
+  "inputDataType": "xml",
+  
+   "outputDataPath":"mysql",
+   "outputDataType": "db"
    
 }

@@ -16,8 +16,10 @@ public class DataProcessor {
 	public DataProcessor(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
+	
+	
 	public void saveCustomerData() throws ClassNotFoundException, SQLException{
-		Connection connection = dataSource.getConnection();
+		Connection connection = dataSource.getConnection("mysql");
 		Statement   statement = connection.createStatement();
 		ResultSet   resultSet = statement.executeQuery("select * from `data-line-pipe`.`customer`;");
 		while(resultSet.next()){
@@ -33,7 +35,7 @@ public class DataProcessor {
 		Statement statement = null;
 		Connection connection = null;
 		try {
-			connection = dataSource.getConnection();
+			connection = dataSource.getConnection("mysql");
 			for (Customer cust : coustomerList) {
 				 for(Shopping shopping : cust.getShopList()){
 					 for(Item item : shopping.getItemList()){
